@@ -1,22 +1,30 @@
-<style class="INLINE_PEN_STYLESHEET_ID">
-    html {
-  height: 100%;
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; 
+ overflow: hidden;
+ overflow-x: hidden;
 }
+
 body {
   margin:0;
   padding:0;
   font-family: sans-serif;
-  background: linear-gradient(#141e30, #243b55);
+  background: #fff;
+  color: #fff;
+  overflow: hidden;
+  overflow-x: hidden;
 }
+
 
 .login-box {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 400px;
-  padding: 40px;
+  /*width: 340px;*/
+  padding: 19px;
   transform: translate(-50%, -50%);
-  background: rgba(0,0,0,.5);
+  background: #61157c;
   box-sizing: border-box;
   box-shadow: 0 15px 25px rgba(0,0,0,.6);
   border-radius: 10px;
@@ -59,32 +67,29 @@ body {
 .login-box .user-box input:valid ~ label {
   top: -20px;
   left: 0;
-  color: #e1cf38;
+  color: #ffffff;
   font-size: 12px;
 }
 
 .login-box form a {
   position: relative;
   display: inline-block;
-  padding: 10px 20px;
+  padding: 10px 105px;
   color: #000000;
   font-size: 16px;
   text-decoration: none;
   text-transform: uppercase;
   overflow: hidden;
   transition: .5s;
-  margin-top: 40px;
+  
   letter-spacing: 4px
 }
 
 .login-box a:hover {
-  background: #000000;
+  background: #a607c9;
   color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 0 5px #ea5715,
-              0 0 25px #ec6013,
-              0 0 50px #f1720f,
-              0 0 100px #f2770e;
+  border-radius: 15px;
+  
 }
 
 .login-box a span {
@@ -126,7 +131,7 @@ body {
   right: -100%;
   width: 100%;
   height: 2px;
-  background: linear-gradient(270deg, transparent, #ec5f13);
+  background: linear-gradient(270deg, transparent, #ce009a);
   animation: btn-anim3 1s linear infinite;
   animation-delay: .5s
 }
@@ -159,4 +164,53 @@ body {
   }
 }
 
-  </style>
+footer {
+  background-color: #61157c;
+  color: #fff;
+  font-size: 18px;
+  bottom: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 999;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+footer i {
+  color: red;
+}
+
+footer a {
+  color: #3c97bf;
+  text-decoration: none;
+}
+
+
+.navbar-custom {
+  background-color: #61157c;
+}
+
+.dropdown-item{
+display: block;
+width: 100%;
+padding: .25rem 4.5rem;
+clear: both;
+font-weight: 400;
+color: #212529;
+text-align: inherit;
+white-space: nowrap;
+background-color: #fff;
+border: 0;
+border-radius: 15px;
+}
+
+dl, ol, ul {
+  margin-top: 3px;
+}
+
+
+
