@@ -238,3 +238,82 @@ dl, ol, ul {
     border-color: #ffffff;
 }
 
+
+.button {
+  background: #61157c;
+  color: #fff;
+  height: 50px;
+  width: 250px;
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  cursor: pointer;
+  border-radius: 40px;
+  font: 1.05rem/1 poppins;
+  border: none;
+}
+
+.button2 {
+  background: #61157c;
+  color: #fff;
+  height: 50px;
+  width: 250px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  cursor: pointer;
+  border-radius: 40px;
+  font: 1.05rem/1 poppins;
+  border: none;
+}
+
+.button3 {
+  background: #61157c;
+  color: #fff;
+  height: 50px;
+  width: 250px;
+  text-align: center;
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  cursor: pointer;
+  border-radius: 40px;
+  font: 1.05rem/1 poppins;
+  border: none;
+}
+
+.button4 {
+  background: #61157c;
+  color: #fff;
+  height: 50px;
+  width: 250px;
+  text-align: center;
+  position: absolute;
+  top: 70%;
+  transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  cursor: pointer;
+  border-radius: 40px;
+  font: 1.05rem/1 poppins;
+  border: none;
+}
+
+.modal-body{
+  align-items: center;
+  color: #000000;
+}
+
+

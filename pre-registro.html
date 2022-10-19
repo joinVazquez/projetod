@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="pt-BR"> 
+<head>
+
+<meta charset="utf-8">
+<title>PROJETO D - Compartilhar é se importar!</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" href="https://i.imgur.com/NQ1zygv.png" type="image/x-icon">
+
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<!-- Custom styles for this template -->
+<link rel="stylesheet" href="pre-cadastro.css" crossorigin="anonymous">
+
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+</head>
+  
+<body>
+
+  <nav class="navbar navbar-light navbar-custom"></nav><br>
+
+
+  <div class="container">
+    <center><img src="https://i.imgur.com/EdxZscU.png" width="140" height="80" class="d-inline-block align-top" alt=""></a></center>                
+  </div><br><br>
+
+  
+ 
+<div class="login-box">
+<form>
+  <div class="form-group">
+    <label for="exampleInputnome">Nome</label>
+    <input type="text" class="form-control" id="nome" required>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email</label>
+    <input type="email" class="form-control" id="email" required>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Senha</label>
+    <input type="password" class="form-control" id="senha" required>
+    <p style="margin-top: 10px; margin-bottom: 10px; font-size: 11px;">Mínimo 6 Caracteres</p>
+  </div>
+
+    <button class="btn btn-xs btn-icon btn-block btn-primary " id="enviar" type="submit">Cadastrar<span class="novi-icon icon mdi mdi-arrow-right-bold-circle-outline"></span></button>
+  
+  <br><br><center><div id="error" class="form-error"></div></center>
+</form>
+</div>
+  
+
+<footer>
+  <p class="m-0 text-center text-white small"><em>Ajude a manter nosso projeto com sua doação!!</em></p>
+</footer>
+
+
+
+<!-- Bootstrap core JavaScript -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
+
+<script id="rendered-js">
+
+  let switchCtn = document.querySelector("#switch-cnt");
+  let switchC1 = document.querySelector("#switch-c1");
+  let switchC2 = document.querySelector("#switch-c2");
+  let switchCircle = document.querySelectorAll(".switch__circle");
+  let switchBtn = document.querySelectorAll(".switch-btn");
+  let aContainer = document.querySelector("#a-container");
+  let bContainer = document.querySelector("#b-container");
+  let allButtons = document.querySelectorAll(".submit");
+  
+  let getButtons = e => e.preventDefault();
+  
+  let changeForm = e => {
+  
+    switchCtn.classList.add("is-gx");
+    setTimeout(function () {
+      switchCtn.classList.remove("is-gx");
+    }, 1500);
+  
+    switchCtn.classList.toggle("is-txr");
+    switchCircle[0].classList.toggle("is-txr");
+    switchCircle[1].classList.toggle("is-txr");
+  
+    switchC1.classList.toggle("is-hidden");
+    switchC2.classList.toggle("is-hidden");
+    aContainer.classList.toggle("is-txl");
+    bContainer.classList.toggle("is-txl");
+    bContainer.classList.toggle("is-z200");
+  };
+  
+  let mainF = e => {
+    for (var i = 0; i < allButtons.length; i++) {if (window.CP.shouldStopExecution(0)) break;
+      allButtons[i].addEventListener("click", getButtons);}window.CP.exitedLoop(0);
+    for (var i = 0; i < switchBtn.length; i++) {if (window.CP.shouldStopExecution(1)) break;
+      switchBtn[i].addEventListener("click", changeForm);}window.CP.exitedLoop(1);
+  };
+  
+  window.addEventListener("load", mainF);
+  //# sourceURL=pen.js
+      </script>
+    
+  
+               
+  <script src='https://www.gstatic.com/firebasejs/3.7.0/firebase.js'></script>
+  <script id="rendered-js">
+  // Initialize Firebase
+  var config = {
+      apiKey: "AIzaSyCZCSlKyJxzQGWQvUoX5qpcP78_8pf8Zaw",
+      authDomain: "nextpack-io.firebaseapp.com",
+      databaseURL: "https://nextpack-io.firebaseio.com",
+      projectId: "nextpack-io",
+      storageBucket: "nextpack-io.appspot.com",
+      messagingSenderId: "688401667087" };
+  
+  firebase.initializeApp(config);
+  
+  // capturamos los datos al pulsar enviar
+  
+  document.getElementById("enviar").addEventListener("click", inscribirse);
+  var rootRef = firebase.database().ref("cadastro/");
+  
+  function inscribirse(datos, borraForm) {
+  
+    // recojo los datos del formulario y lo limpio
+    var campoEmail = document.getElementById("email");
+    var campoNombre = document.getElementById("senha");
+    var campoApellidos = document.getElementById("nome");
+  
+    var error = document.getElementById("error");
+  
+    if (campoEmail.value !== "" && campoNombre.value !== "" && campoApellidos.value !== "") {
+      datos.email = campoEmail.value.trim();
+      datos.nombre = campoNombre.value.trim();
+      datos.apellidos = campoApellidos.value.trim();
+      error.innerHTML = "";
+    } else {
+      var error = document.getElementById("error");
+      error.classList.remove("error--ok");
+      error.innerHTML = "";
+      return false;
+    }
+  
+    campoEmail.value = "";
+    campoNombre.value = "";
+    campoApellidos.value = "";
+  
+    // creo el modelo de datos del usuaruio
+    var usuario = {
+      "email": datos.email,
+      "senha": datos.nombre,
+      "nome": datos.apellidos };
+  
+    // compruebo que no hay nadie con el mismo email y si no es asi lo introduzco en la bbdd
+  
+    rootRef.orderByValue().on("value", function (snapshot) {
+      var emails = [];
+      snapshot.forEach(function (data) {
+        emails.push(data.val().email);
+      });
+  
+      if (emails.indexOf(datos.email) != -1) {
+        document.getElementById("error").innerHTML = "CADASTRO REALIZADO!! AGUARDE APROVAÇÃO!!";
+        document.getElementById("error").classList.add("error--ok");
+        return false;
+      } else {
+        rootRef.child(datos.nombre).set(usuario);
+        document.getElementById("error").innerHTML = "CADASTRO REALIZADO!! AGUARDE APROVAÇÃO!!";
+        return false;
+  
+      }
+    });
+  
+    consultaDatos();
+  }
+  
+  function consultaDatos() {
+  
+    rootRef.orderByKey().on("value", function (snapshot) {
+  
+      var contenido = document.getElementById("user-list-wrapp");
+      contenido.innerHTML = "";
+      snapshot.forEach(function (data) {
+  
+        contenido.innerHTML += '<div class="user-list__item"> <h4>senha: <span>' + data.val().nombre + '</span></h4><p>Email: <span>' + data.val().email + '</span></p></div>';
+      });
+  
+    }, function (errorObject) {
+      console.log("Falha na leitura de dados: " + errorObject.code);
+    });
+  };
+  
+  consultaDatos();
+  //# sourceURL=pen.js
+      </script>
