@@ -242,7 +242,7 @@ html {
   .button {
     background: #61157c;
     color: #fff;
-    height: 50px;
+    height: 45px;
     width: 250px;
     text-align: center;
     position: absolute;
@@ -252,7 +252,6 @@ html {
     right: 0;
     margin: 0 auto;
     cursor: pointer;
-    border-radius: 40px;
     font: 1.05rem/1 poppins;
     border: none;
   }
@@ -260,7 +259,7 @@ html {
   .button2 {
     background: #61157c;
     color: #fff;
-    height: 50px;
+    height: 45px;
     width: 250px;
     text-align: center;
     position: absolute;
@@ -270,7 +269,6 @@ html {
     right: 0;
     margin: 0 auto;
     cursor: pointer;
-    border-radius: 40px;
     font: 1.05rem/1 poppins;
     border: none;
   }
@@ -278,7 +276,7 @@ html {
   .button3 {
     background: #61157c;
     color: #fff;
-    height: 50px;
+    height: 45px;
     width: 250px;
     text-align: center;
     position: absolute;
@@ -288,7 +286,6 @@ html {
     right: 0;
     margin: 0 auto;
     cursor: pointer;
-    border-radius: 40px;
     font: 1.05rem/1 poppins;
     border: none;
   }
@@ -296,7 +293,7 @@ html {
   .button4 {
     background: #61157c;
     color: #fff;
-    height: 50px;
+    height: 45px;
     width: 250px;
     text-align: center;
     position: absolute;
@@ -306,15 +303,19 @@ html {
     right: 0;
     margin: 0 auto;
     cursor: pointer;
-    border-radius: 40px;
     font: 1.05rem/1 poppins;
     border: none;
   }
-  
+
+   
   .modal-body{
     align-items: center;
     color: #000000;
   }
+
+  .navbar-text {
+    color: white!important;
+}
   
   
   
