@@ -246,7 +246,7 @@ html {
     width: 250px;
     text-align: center;
     position: absolute;
-    top: 40%;
+    top: 50%;
     transform: translateY(-50%);
     left: 0;
     right: 0;
@@ -263,7 +263,7 @@ html {
     width: 250px;
     text-align: center;
     position: absolute;
-    top: 50%;
+    top: 60%;
     transform: translateY(-50%);
     left: 0;
     right: 0;
@@ -280,7 +280,7 @@ html {
     width: 250px;
     text-align: center;
     position: absolute;
-    top: 60%;
+    top: 70%;
     transform: translateY(-50%);
     left: 0;
     right: 0;
@@ -297,7 +297,7 @@ html {
     width: 250px;
     text-align: center;
     position: absolute;
-    top: 70%;
+    top: 80%;
     transform: translateY(-50%);
     left: 0;
     right: 0;
