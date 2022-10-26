@@ -1,0 +1,17 @@
+
+
+.btn-primary {
+    color: #fff;
+    background-color: #7c05b9;
+    margin-top: 30%;
+    border-color: #7c05b9;
+    border-radius: 30px;
+    text-decoration: none;
+  }
+
+  .btn-primary:hover {
+    color: #fff;
+    background-color: #2a0058;
+    border-color: #2a0058;;
+    
+}
