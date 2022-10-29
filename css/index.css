@@ -1,11 +1,3 @@
-html, body {
-  background-color: #242424;
-  text-align: center;
-  height: 100%;
-  overflow-x: hidden; /* Hide horizontal scrollbar */
-  color: #ffffff;
-}
- 
 /* personalizar a barra em geral, aqui estou definindo 10px de largura para a barra vertical
 e 10px de altura para a barra horizontal */
 ::-webkit-scrollbar {
@@ -21,50 +13,73 @@ e 10px de altura para a barra horizontal */
   /* aqui é a alça da barra, que demonstra a altura que você está na página
   estou colocando uma cor azul clara nela*/
   ::-webkit-scrollbar-thumb {
-  background: #7c00ce;
+  background: #61157c;
+  }
+
+    
+  .section-bg {
+      background: #61157c;
+  }
+
+  #progress {
+      background-color: #61157c;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      border: 1px solid var(--border-two);
+      border-radius: 5px;
+      position: fixed;
+      right: 20px;
+      z-index: 9999;
+      display: none;
+      transition: all 0.3s;
+      bottom: 20px;
+  }
+
+  .bg-load {
+      background: #61157c;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      min-height: 100vh;
+      z-index: 9999999;
   }
 
 
-.svg-wrapper {
-  position: relative;
-  top: 10%;
-  transform: translateY(-50%);
-	  margin: 0 auto;
-  width: 320px;  
-}
-.shape {
-  stroke-dasharray: 140 540;
-  stroke-dashoffset: -474;
-  stroke-width: 8px;
-  fill: transparent;
-  stroke: #831aa5;
-  border-bottom: 5px solid black;
-  transition: stroke-width 1s, stroke-dashoffset 1s, stroke-dasharray 1s;
-}
-.text {
-  font-family: 'Roboto Condensed';
-  font-size: 22px;
-  line-height: 32px;
-  letter-spacing: 8px;
-  color: rgb(255, 255, 255);
-  top: -48px;
-  position: relative;
+  .cmn--btn {
+      border-radius: 10px;
+      padding: 14px 29px 15px;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 23.4px;
+      display: inline-block;
+      color: var(--white-color);
+      text-transform: capitalize;
+      transition: all 0.3s;
+      background: #61157c;
+      border: 1px solid #61157c;
+      position: relative;
+      overflow: hidden;
+      z-index: 1;
+  }
+
   
-}
-.svg-wrapper:hover .shape {
-  stroke-width: 2px;
-  stroke-dashoffset: 0;
-  stroke-dasharray: 760;
-}
+  .cmn--border {
+      border-radius: 10px;
+      padding: 12px 30px 13px;
+      font-size: 18px;
+      font-weight: 600;
+      display: inline-block;
+      color: #61157c;
+      text-transform: capitalize;
+      border: 1px solid #61157c;
+      transition: all 0.8s;
+      background: transparent;
+      position: relative;
+      z-index: 1;
+  }
 
 
-a {
-  color: #ffffff;
-  text-decoration: none;
-  background-color: transparent;
-}
-
-a:hover {
-  color: #831aa5;
-  text-decoration: none;
-}
+  
