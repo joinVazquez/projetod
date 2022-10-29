@@ -1,109 +1,318 @@
 <!DOCTYPE html>
-<html class="wide wow-animation scrollTo" lang="pt-BR">
-  <head>
-    <title>Projeto D - Compartilhar é se importar!</title>
-    <meta charset="utf-8">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <link rel="icon" href="https://i.imgur.com/NQ1zygv.png" type="image/x-icon">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7CLato:300,300italic,400,700,900%7CYesteryear">
-    <link rel="stylesheet" href="css/stylecolecao.css">
-    <link rel="stylesheet" href="css/colecao.css">
-		<!--[if lt IE 10]>
-    <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
-    <script src="js/html5shiv.min.js"></script>
-		<![endif]-->
-  </head>
-  <body>
-    
-    <div class="page text-center">
-      <!-- Page Head-->
-      <header class="section page-head slider-menu-position">
-        <!-- RD Navbar Transparent-->
-        <div class="rd-navbar-wrap">
-          <nav class="rd-navbar rd-navbar-default rd-navbar-transparent" data-md-device-layout="rd-navbar-fixed" data-lg-device-layout="rd-navbar-static" data-lg-auto-height="true" data-md-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-stick-up="true">
-            <div class="rd-navbar-inner">
-              <!-- RD Navbar Panel-->
-              <div class="rd-navbar-panel">
-                <!-- RD Navbar Toggle-->
-                
-                <!--Navbar Brand-->
-                <div class="rd-navbar-brand"><a href="index.html"><img style='margin-top: -5px;margin-left: -15px;' width='80' height='70' src='https://i.imgur.com/YSuX1KJ.png' alt=''/></a></div>
-              </div>
-              <div class="rd-navbar-menu-wrap">
-                <div class="rd-navbar-nav-wrap">
-                <div class="rd-navbar-btn-wrap"><a class="btn btn-primary btn-anis-effect" href="https://t.me/JoinProfessor" target="_blank"><span class="btn-text">Quero Acesso</span></a></div>
-              </div>
+<html lang="pt-BR">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Projeto D - Compartilhar é se importar!</title>
+   <!--Favicon img-->
+   <link rel="icon" href="https://i.imgur.com/NQ1zygv.png" type="image/x-icon">
+   <!--Bootstarp min css-->
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <!--Bootstarp map css-->
+   <link rel="stylesheet" href="css/bootstrap.css.map">
+   <!--Odometer css-->
+   <link rel="stylesheet" href="css/odometer.css">
+   <!--All min css-->
+   <link rel="stylesheet" href="css/all.min.css">
+   <!--Animate css-->
+   <link rel="stylesheet" href="css/animate.css">
+   <!--Owl Nice select css-->
+   <link rel="stylesheet" href="css/nice-select.css">
+   <!--main css-->
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/colecao.css">
+</head>
+
+<body>
+
+   <div class="bg-load">
+      <div class="loading"></div>
+   </div>
+
+   <div id="progress">
+      <span id="valiu"><i class="fas fa-arrow-up"></i></span>
+   </div>
+
+
+   <header class="header-section">
+      <div class="container">
+         <div class="header-wrapper">
+            <div class="logo-menu">
+               <a href="index.html" class="logo">
+                  <img src="img/logo/logodp.png" alt="logo">
+               </a>
             </div>
-          </nav>
-        </div>
-        <!--Swiper-->
-        <div class="swiper-container swiper-slider" data-loop="true" data-autoplay="true" data-height="100vh" data-dragable="false" data-min-height="480px">
-          <div class="swiper-wrapper text-center">
-            <div class="swiper-slide" id="page-loader" data-slide-bg="https://i.imgur.com/Kh5aBvY.png" data-preview-bg="https://i.imgur.com/Kh5aBvY.png">
-              
-              <div class="swiper-caption swiper-parallax">
-                <div class="swiper-slide-caption">
-                  <div class="container">
-                    <div class="row justify-content-xl-center">
-                      <div class="col-xl-12">
-                        <h1><span class="big text-uppercase" data-caption-animate="fadeIn" data-caption-delay="700">Descubra como ECONOMIZAR</span></h1>
-                      </div>
-                      <div class="col-xl-10 offset-top-30">
-                        <h4 class="d-none d-md-block text-light" data-caption-animate="fadeIn" data-caption-delay="900">
-                          <em>com a plataforma <strong>designi.com.br</strong> em apenas <strong>79 SEGUNDOS!!</strong></em>
-                          
-                        </h4>
-                        
-                        <div class="group group-xl offset-top-20 offset-sm-top-50"><a class="btn btn-primary btn-lg btn-anis-effect" href="https://t.me/+Dh3UjM1iR4RhNGEx" target="_blank" data-caption-animate="fadeIn" data-caption-delay="1200"><span class="btn-text">Canal Telegram</span></a><a class="btn btn-default btn-lg btn-anis-effect" href="login.html" target="_blank" data-caption-animate="fadeIn" data-caption-delay="1200"><span class="btn-text">Acessar Sistema</span></a></div>
-                      </div>
-                    </div>
+            <div class="header-bar d-lg-none">
+               <span></span>
+               <span></span>
+               <span></span>
+            </div>
+            <ul class="main-menu">
+               <li>
+                  <a href="#0">Menu <i class="fas fa-chevron-down"></i></a>
+                  <ul class="sub-menu">
+                     <li><a href="login.html">Acessar Sistema</a></li>
+                     <li><a href="https://t.me/+Dh3UjM1iR4RhNGEx" target="_blank">Canal Telegram</a></li>
+                     <li><a href="colecao.html" target="_blank">Coleções Disponíveis</a></li>
+                  </ul>
+               </li>
+            </ul>
+            <a href="https://t.me/JoinProfessor" target="_blank" class="cmn--btn">Entrar em contato</a>
+         </div>
+      </div>
+   </header>
+
+   <section class="hero-section">
+      <div class="container">
+         <div class="row align-items-center">
+            <div class="col-xxl-6 col-lg-7 wow fadeInUp" data-wow-delay="0.2s">
+               <div class="hero-content">
+                  <h5>
+                     Boas Vindas Designers!!
+                  </h5>
+                  <h2>
+                     <em>Descubra como 
+                     <strong>ECONOMIZAR</strong> com nossa plataforma!!
+                     </em>
+                  </h2>
+                  <p>
+                     Baixe sem limites todos os arquivos que encontrar em nossa base de dados!
+                  </p>
+                  <div class="banner-cmn">
+                     <a href="https://t.me/JoinProfessor" target="_blank" class="cmn--btn">
+                        QUERO ACESSO - R$ 29,90
+                      </a>
+                      
                   </div>
-                </div>
-              </div>
+               </div>
+            </div>
+            <div class="col-xxl-6 col-lg-5">
+               
+            </div>
+         </div>
+      </div>
+      <div class="hero-thumb">
+         <img src="img/banner/hero.png" alt="hero-img">
+      </div>
+      <div class="banner-shape1">
+         <img src="img/banner/b-shape1.png" alt="b-shape">
+      </div>
+      <div class="banner-shape2">
+         <img src="img/banner/ratio2.png" alt="b-shape">
+      </div>
+      <div class="banner-shape3">
+         <img src="img/banner/bisssu.png" alt="b-shape">
+      </div>
+      <div class="banner-shape4">
+         <img src="img/banner/drop.png" alt="b-shape">
+      </div>
+      <div class="banner-shape5">
+         <img src="img/banner/ratio.png" alt="b-shape">
+      </div>
+   </section>
+
+<section class="counter-section pb-120">
+<div class="container">
+   <div class="counter-wrapper">
+      <div class="row g-4">
+         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+            <div class="counter-items odometer-item">
+               <div class="counter-content">
+                  <div class="cont d-flex align-items-center">
+                     <h2>
+                        +
+                     </h2>
+                     <h2 class="odometer" data-odometer-final="50">
+                        0
+                     </h2>
+                     <h2>
+                        k
+                     </h2>
+                  </div>
+               </div>
+               <p>Arquivos Disponíveis</p>
+            </div>
+         </div>
+         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+            <div class="counter-items odometer-item">
+               <div class="counter-content">
+                  
+                  <div class="cont d-flex align-items-center">
+                     <h2>
+                        +
+                     </h2>
+                     <h2 class="odometer" data-odometer-final="4">
+                        0
+                     </h2>
+                     <h2>
+                        TB
+                     </h2>
+                  </div>
+               </div>
+               <p>Armazenado no Drive</p>
+               </div>
+         </div>
+         <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6">
+            <div class="counter-items odometer-item">
+               <div class="counter-content">
+                  <div class="cont d-flex align-items-center">
+                     <h2>
+                        +
+                     </h2>
+                     <h2 class="odometer" data-odometer-final="70">
+                        0
+                     </h2>
+                     
+                  </div>
+               </div>
+               <p>Clientes Satisfeitos</p>
+            </div>
+         </div>
+         
+      </div>
+   </div>
+</div>
+</section>
+
+<br>
+<section class="protfolio-single pb-120">
+   <div class="container">
+      <div class="portfolio-wrapper-single">
+
+         <div class="content">
+            <div class="section-header">
+               <center><h3 class="section-title">VEJA COMO FUNCIONA:</h3></center>
+            </div>
+
+         <div class="thumb">
+            <div style="padding:53.22% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/763622230?h=b5d12470f5&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="PROJETO D"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+         </div>
+         
+               
+</section>
+
+<section class="service-section pb-120">
+      <div class="container">
+         <div class="section-header section-center wow fadeInDown" data-wow-delay="0.3s">
+            <h2 class="section-title">
+               Recursos gráficos para turbinar seus projetos de design
+            </h2>
+            <p>
+               Encontre o melhor conteúdo para seus projetos, baixe tudo que precisar diretamente da nuvem.
+            </p>
+         </div>
+         <div class="row g-4">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
+               <div class="service-items">
+                  <div class="thumb">
+                     <img src="img/service/service1.png" alt="service-img">
+                  </div>
+                  <div class="content">
+                     <h5>
+                        <a href="#0">PSDs</a>
+                     </h5>
+                     <p>
+                        Os melhores psds que você pode encontrar no designi.com.br
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+               <div class="service-items">
+                  <div class="thumb">
+                     <img src="img/service/service2.png" alt="service-img">
+                  </div>
+                  <div class="content">
+                     <h5>
+                        <a href="#0">Motion</a>
+                     </h5>
+                     <p>
+                        Os melhores motion que você pode encontrar no designi.com.br
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+               <div class="service-items">
+                  <div class="thumb">
+                     <img src="img/service/service4.png" alt="service-img">
+                  </div>
+                  <div class="content">
+                     <h5>
+                        <a href="#0">Mockups</a>
+                     </h5>
+                     <p>
+                        Os melhores mockups que você pode encontrar no designi.com.br
+                     </p>
+                  </div>
+               </div>
             </div>
             
-      </header>
-     
-      <section class="section novi-background section-66 section-lg-98 section-xl-124 bg-lighter">
-        <div class="container">
-          
-          <div class="offset-lg-top-30 offset-xxl-top-66 text-lg-left">
-            <div class="row justify-content-lg-center justify-content-xxl-between grid-group-md">
-              
-              <div class="col-lg-12">
-                <div style="padding:53.22% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/763622230?h=b5d12470f5&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="PROJETO D"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-              </div>
+         </div>
+         <div class="service-btn">
+            <a href="https://t.me/JoinProfessor" target="_blank" class="cmn--border">
+               QUERO FAZER PARTE AGORA
+            </a>
+         </div>
+      </div>
+   </section>
+<!--Services End-->
+
+<!--About Here-->
+   <section class="about-section section-bg-two pt-120 pb-120">
+      <div class="container">
+         <div class="row flex-row-reverse align-items-center">
+            <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.2s">
+               <div class="about-content-right">
+                  <div class="section-header">
+                     <h2 class="section-title">
+                        Sobre o projeto
+                     </h2>
+                     <p>
+                      Nossa missão é simplificar o processo criativo de designers e criadores de conteúdo!!
+                      Criado com o propósito de ajudar quem não tem "cash" para pagar a plataforma original
+                      (designi.com.br) pode contar com nossa ajuda!
+                     </p>
+                  </div>
+                  <div class="about-cmn">
+                     <a href="https://t.me/JoinProfessor" target="_blank" class="cmn--btn">
+                        Mais Informações
+                     </a>
+                     
+                  </div>
+               </div>
             </div>
-          </div>
-        </div>
-      </section>
-      
-            <!-- Call to action type 2-->
-            <section class="section novi-background section-66 context-dark bg-mantis">
-              <div class="container">
-                <div class="row justify-content-sm-center align-items-sm-center no-gutters grid-group-md">
-                  <div class="col-lg-7 col-xxl-9 text-center text-lg-left">
-                    <h3><span class="big">QUERO BAIXAR ARQUIVOS ILIMITADOS</span></h3>
-                  </div>
-                  <div class="col-lg-4 col-xl-3"><a class="btn btn-icon btn-lg btn-default btn-anis-effect btn-icon-btn-icon-left" href="https://t.me/JoinProfessor" target="_blank"><span class="icon novi-icon mdi mdi-cart-outline"></span>  R$29,90</a>
-                  </div>
-                </div>
-              </div>
-            </section>
-      <!-- Home Intro footer-->
-      <footer class="section novi-background section-34 page-footer bg-black context-dark">
-        <div class="container">
-          
-          <p class="small text-darker">&copy; <span class="copyright-year"></span> . Projeto D</p>
-        </div>
-      </footer>
-    </div>
-    <!-- Global RD Mailform Output-->
-    <div class="snackbars" id="form-output-global"></div>
-    <script src="js/core.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/revolution.min.js"></script>
-  </body>
+            <div class="col-lg-7 wow fadeInDown" data-wow-delay="0.4s">
+               <div class="about-thumb-left">
+                  <img src="img/about/about.png" alt="about-img">
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+   <footer class="footer-section section-bg pt-120"> </footer>
+
+   <!--Jquery 3 6 0 Min Js-->
+   <script src="js/jquery-3.6.0.min.js"></script>
+   <!--Bootstrap bundle Js-->
+   <script src="js/bootstrap.bundle.js"></script>
+   <!--Waypoint Jquery min Js-->
+   <script src="js/jquery.waypoints.min.js"></script>
+   <!--Viewport Jquery Js-->
+   <script src="js/viewport.jquery.js"></script>
+   <!--Wow min Js-->
+   <script src="js/wow.min.js"></script>
+   <!--Odometer Up min Js-->
+   <script src="js/odometer.min.js"></script>
+   <!--Owl nice Jquery min Js-->
+   <script src="js/jquery.nice-select.min.js"></script> 
+   <!--main Js-->
+   <script src="js/main.js"></script>
+
+</body>
+
 </html>
