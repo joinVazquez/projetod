@@ -7,13 +7,13 @@ e 10px de altura para a barra horizontal */
      
     /* aqui é para personalizar o fundo da barra, neste caso estou colocando um fundo cinza escuro*/
     ::-webkit-scrollbar-track {
-    background:#333;
+    background:rgb(81, 81, 81);
     }
      
     /* aqui é a alça da barra, que demonstra a altura que você está na página
     estou colocando uma cor azul clara nela*/
     ::-webkit-scrollbar-thumb {
-    background: #61157c;
+    background: #ab26dc;
     }
 
    
@@ -40,6 +40,13 @@ e 10px de altura para a barra horizontal */
     }
 
     .icon-darker-filled {
-        background: #61157c;
+        background: #ab26dc;
     }
     
+
+    .pagination-classic>li+li:not(:last-child).active>a, .pagination-classic>li+li:not(:last-child).active>span {
+        color: #fff;
+        background: #ab26dc;
+        border-color: #ab26dc;
+        cursor: default;
+    }
