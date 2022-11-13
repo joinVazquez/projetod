@@ -1,0 +1,18 @@
+body {
+    height: 100vh;
+}
+
+.bg-dark {
+    background-color: #61157c!important;
+}
+
+.btn-group-sm>.btn, .btn-sm {
+    padding: 0.25rem 1.5rem;
+    font-size: .875rem;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #cb1172;
+    border-color: #cb1172;
+}

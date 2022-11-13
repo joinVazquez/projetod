@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+<meta charset="utf-8">
+<title>PROJETO D - Compartilhar é se importar!</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="icon" href="https://i.imgur.com/NQ1zygv.png" type="image/x-icon">
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!-- Custom styles for this template -->
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="global.css">
+
+
+
+</head>
+
+<body class="centralize">
+    <form>
+        <div class="form-field">
+            
+            <input type="email" name="email" id="email" placeholder="E-mail" onchange="onChangeEmail()" required/>
+           
+        </div>
+        <div class="form-field">
+            
+            <input type="password" name="password" id="password" placeholder="Senha" onchange="onChangePassword()" required/>
+            
+        </div>
+        
+        <div>
+            <button type="button" class="solid" id="login-button" onclick="login()">Entrar</button>
+        </div>
+        <div>
+            <button type="button" class="outline" id="recover-password-button" onclick="recoverPassword()">Esqueci a Senha</button>
+        </div>
+    </form>
+
+    
+
+</body>
+
+
+
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.7/firebase-auth-compat.js"></script>
+<script src="firebase-init.js"></script>
+
+<script src="index.js"></script>
+<script src="validations.js"></script>
+<script src="loading.js"></script>
+
+</html>

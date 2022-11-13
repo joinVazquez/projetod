@@ -1,0 +1,17 @@
+body {
+    height: 100vh;
+    background: #660e9d!important;
+    
+}
+form {
+    width: 406px;
+    padding: 27px 27px 10px;
+    background-color: blueviolet;
+    border-radius: 20px;
+}
+input {
+    border: none;
+}
+button {
+    margin-bottom: 10px;
+}
