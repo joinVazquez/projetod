@@ -3,7 +3,7 @@ body {
 }
 
 .bg-dark {
-    background-color: #61157c!important;
+    background-color: #8c60c4!important;
 }
 
 .btn-group-sm>.btn, .btn-sm {
@@ -13,6 +13,6 @@ body {
 
 .btn-primary {
     color: #fff;
-    background-color: #cb1172;
-    border-color: #cb1172;
+    background-color: #9c2da0;
+    border-color: #9c2da0;
 }
