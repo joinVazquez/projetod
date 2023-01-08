@@ -1,9 +1,12 @@
 body {
     height: 100vh;
+    background-color: #121212;
 }
 
+
+
 .bg-dark {
-    background-color: #8c60c4!important;
+    background-color: #61157c!important;
 }
 
 .btn-group-sm>.btn, .btn-sm {
@@ -15,4 +18,10 @@ body {
     color: #fff;
     background-color: #9c2da0;
     border-color: #9c2da0;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #c73081;
+    border-color: #c73081;
 }
